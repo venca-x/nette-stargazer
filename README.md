@@ -1,4 +1,25 @@
-Configuration
+Installation
+------------
+
+ 1. Add the bundle to your dependencies:
+
+        // composer.json
+
+        {
+           // ...
+           "require": {
+               // ...
+               "venca-x/nette-stargazer": "@dev"
+           }
+        }
+
+ 2. Use Composer to download and install the bundle:
+
+        composer update
+        
+
+
+Usage Sample
 -------------
 
 BasePresenter.php
