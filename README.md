@@ -26,13 +26,16 @@ BasePresenter.php
 
 ```php
 
-protected function createTemplate( $class = NULL )
+protected function beforeRender()
 {
-    $template = parent::createTemplate( $class );
-	$template->registerHelper( 'stargazer', callback( new \Stargazer( '<i class="fa fa-star"></i>', '<i class="fa fa-star-o"></i>' ), 'makeStargazer' ) );
-	//$template->registerHelper( 'stargazer', callback( new \Stargazer(), 'makeStargazer' ) );
-	//$template->registerHelper( 'stargazer', callback( new \Stargazer( $star = "1", $starEmpty = "0", $starCount = 10 ), 'makeStargazer' ) );
-    return $template;
+    parent::beforeRender();
+
+    $this->template->addFilter('stargazer', function ($text) {
+        $stargazer = new \Stargazer('<i class="fa fa-star"></i>', '<i class="fa fa-star-o"></i>');
+        //$stargazer = new \Stargazer();
+        //$stargazer = new \Stargazer($star = "1", $starEmpty = "0", $starCount = 10);
+        return $stargazer->makeStargazer($text);
+    });
 }
 
 ```
@@ -42,6 +45,6 @@ Usage
 
 ```php
 {$o->score|stargazer|noescape}
-{*{$o->score|stargazer}*}
+{$o->score|stargazer}
 
 ```
