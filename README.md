@@ -11,23 +11,9 @@ Nette plugin for showing score as stars.
 
 Installation
 ------------
-
- 1. Add the bundle to your dependencies:
-
-        // composer.json
-
-        {
-           // ...
-           "require": {
-               // ...
-               "venca-x/nette-stargazer": "@dev"
-           }
-        }
-
- 2. Use Composer to download and install the bundle:
-
-        composer update
-        
+```
+composer require venca-x/nette-stargazer:dev-master
+```
 
 
 Usage Sample
