@@ -1,0 +1,33 @@
+{
+  "name": "nette-stargazer",
+  "version": "1.0.0",
+  "description": "Nette plugin for showing score as stars",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venca-x/nette-stargazer.git"
+  },
+  "keywords": [
+    "Nette",
+    "stargazer",
+    "latte"
+  ],
+  "author": "vEnCa-X",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venca-x/nette-stargazer/issues"
+  },
+  "homepage": "https://github.com/venca-x/nette-stargazer#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-shell": "^2.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}

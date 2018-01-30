@@ -1,18 +1,24 @@
 {
-    "name": "venca-x/nette-stargazer",
-    "description": "Nette addon. Convert round numer to stars",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "vEnCa-X",
-            "email": "venca-x@seznam.cz"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require-dev": {
-        "nette/tester": "@dev"
-    },
-    "autoload": {
-        "classmap": ["src/"]
+  "name": "venca-x/nette-stargazer",
+  "description": "Nette addon. Convert round numer to stars",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "vEnCa-X",
+      "email": "venca-x@seznam.cz"
     }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "latte/latte": "^3.0"
+  },
+  "require-dev": {
+    "nette/tester": "^2.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev"
 }
