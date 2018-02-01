@@ -22,7 +22,6 @@ Usage Sample
 BasePresenter.php
 
 ```php
-
 protected function beforeRender()
 {
     parent::beforeRender();
@@ -39,9 +38,7 @@ protected function beforeRender()
 
 Usage
 -------------
-
 ```php
 {$o->score|stargazer|noescape}
 {$o->score|stargazer}
-
 ```
