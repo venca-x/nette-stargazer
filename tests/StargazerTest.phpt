@@ -10,9 +10,9 @@ require __DIR__ . '/../vendor/autoload.php';          // pri instalaci Composere
 // Nemusite pouzit, pokud preferujete vychozi vypis PHP.
 Tester\Environment::setup();
 
-$stargazer = new Stargazer('1', '0');
-$stargazer5 = new Stargazer('1', '2', 5);
-$stargazer10 = new Stargazer('1', '2', 10);
+$stargazer = new VencaX\Stargazer('1', '0');
+$stargazer5 = new VencaX\Stargazer('1', '2', 5);
+$stargazer10 = new VencaX\Stargazer('1', '2', 10);
 
 //default count star
 Assert::same('11111', $stargazer->makeStargazer(5));
