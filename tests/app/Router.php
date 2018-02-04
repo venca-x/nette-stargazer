@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace VencaX\Components\NettePaginator\Tests\App;
+namespace VencaX\Components\NetteStargazer\Tests\App;
 
 use Nette;
 
