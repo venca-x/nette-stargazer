@@ -78,7 +78,7 @@ class LayoutTest extends Tester\TestCase
 		Tester\Assert::true($response instanceof Nette\Application\Responses\TextResponse);
 
 		$html = (string) $response->getSource();
-		Tester\Assert::same('***oo', $html);
+		Tester\Assert::contains('***oo', $html);
 	}
 
 
@@ -94,7 +94,7 @@ class LayoutTest extends Tester\TestCase
 		Tester\Assert::true($response instanceof Nette\Application\Responses\TextResponse);
 
 		$html = (string) $response->getSource();
-		Tester\Assert::same('<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>', $html);
+		Tester\Assert::contains('<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>', $html);
 	}
 
 
@@ -110,7 +110,7 @@ class LayoutTest extends Tester\TestCase
 		Tester\Assert::true($response instanceof Nette\Application\Responses\TextResponse);
 
 		$html = (string) $response->getSource();
-		Tester\Assert::same('1110000000', $html);
+		Tester\Assert::contains('1110000000', $html);
 	}
 }
 
