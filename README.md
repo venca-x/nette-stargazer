@@ -1,9 +1,10 @@
 Nette-stargazer
 ===============
-[![Build Status](https://travis-ci.org/venca-x/nette-stargazer.svg)](https://travis-ci.org/venca-x/nette-stargazer) 
+[![Build Status](https://travis-ci.org/venca-x/nette-stargazer.svg)](https://travis-ci.org/venca-x/nette-stargazer)
+[![Coverage Status](https://coveralls.io/repos/github/venca-x/nette-stargazer/badge.svg?branch=master)](https://coveralls.io/github/venca-x/nette-stargazer?branch=master) 
 [![Latest Stable Version](https://poser.pugx.org/venca-x/nette-stargazer/v/stable.svg)](https://packagist.org/packages/venca-x/nette-stargazer) 
-[![Total Downloads](https://poser.pugx.org/venca-x/nette-stargazer/downloads.svg)](https://packagist.org/packages/venca-x/nette-stargazer) 
 [![Latest Unstable Version](https://poser.pugx.org/venca-x/nette-stargazer/v/unstable.svg)](https://packagist.org/packages/venca-x/nette-stargazer) 
+[![Total Downloads](https://poser.pugx.org/venca-x/nette-stargazer/downloads.svg)](https://packagist.org/packages/venca-x/nette-stargazer) 
 [![License](https://poser.pugx.org/venca-x/nette-stargazer/license.svg)](https://packagist.org/packages/venca-x/nette-stargazer)
 
 Nette plugin for showing score as stars.
