@@ -7,11 +7,22 @@ Nette-stargazer
 [![Total Downloads](https://poser.pugx.org/venca-x/nette-stargazer/downloads.svg)](https://packagist.org/packages/venca-x/nette-stargazer) 
 [![License](https://poser.pugx.org/venca-x/nette-stargazer/license.svg)](https://packagist.org/packages/venca-x/nette-stargazer)
 
-Nette plugin for showing score as stars.
+Nette plugin for showing score as stars. You define positive and negavide symbols for ratio visualisation.
 
+| Version     | PHP&nbsp;&nbsp;&nbsp;     | Recommended&nbsp;Nette |
+| ---         | ---                       | ---               |
+| dev-master  | \>= 7.1                   | Nette 3.0         |
+| 1.0.x       | \>= 5.5                   | Nette 2.4, 2.3    |
 
 Installation
 ------------
+Install plugin to your dependencies with composer:
+
+```
+composer require venca-x/nette-stargazer:^1.0
+```
+
+**For dev version install**:
 ```
 composer require venca-x/nette-stargazer:dev-master
 ```
@@ -28,13 +39,20 @@ protected function beforeRender()
     parent::beforeRender();
 
     $this->template->addFilter('stargazer', function ($text) {
-        $stargazer = new \Stargazer('<i class="fa fa-star"></i>', '<i class="fa fa-star-o"></i>');
-        //$stargazer = new \Stargazer();
-        //$stargazer = new \Stargazer($star = "1", $starEmpty = "0", $starCount = 10);
+        //$stargazer = new VencaX\Stargazer('<i class="fa fa-star"></i>', '<i class="fa fa-star-o"></i>');
+        //$stargazer = new VencaX\Stargazer();
+        $stargazer = new VencaX\Stargazer($star = "1", $starEmpty = "0", $starCount = 10);
         return $stargazer->makeStargazer($text);
     });
 }
+```
 
+MyPresenter.php
+```php
+protected function renderDefault()
+{
+    $this->template->score = 5;
+}
 ```
 
 Usage
@@ -42,4 +60,10 @@ Usage
 ```php
 {$o->score|stargazer|noescape}
 {$o->score|stargazer}
+```
+
+Output
+-------------
+```html
+*****00000
 ```
